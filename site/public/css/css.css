@@ -1,0 +1,21 @@
+body {
+  margin: 0; }
+
+.grid {
+  width: 360px;
+  height: 598px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(7, 1fr);
+  background-color: greenyellow; }
+
+header {
+  grid-column: span 1;
+  grid-row: span 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1;
+  background-color: hotpink; }
+  header h1 {
+    grid-column: 2/3;
+    grid-row: span 1; }

@@ -1,0 +1,13 @@
+header {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    background-color: hotpink;
+
+    h1 {
+        grid-column: 2/3;
+        grid-row: span 1;
+    }
+}
