@@ -1,0 +1,7 @@
+main {
+    grid-column: span 1;
+    grid-row: span 6;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-template-rows: repeat(6, 1fr);
+}

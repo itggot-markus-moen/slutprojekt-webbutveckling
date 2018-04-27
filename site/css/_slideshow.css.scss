@@ -1,0 +1,27 @@
+.slideshow {
+    grid-column: span 1;
+    grid-row: span 3;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+main {
+    .slide {
+        position: absolute;
+        display: none;
+    }
+    /*img:first-child {
+        display: block;
+    }*/
+}
+
+.show {
+    display: block;
+    grid-column: span 8;
+    grid-row: span 3;
+}
+
+.hide {
+    display: none;
+}
