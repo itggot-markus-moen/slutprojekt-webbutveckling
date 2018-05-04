@@ -1,10 +1,30 @@
 <main>
     <div class="slideshow">
-        <img src="img/Awkward-Seal.jpg" alt="Seal-of-Fortune" title="Buy Me!" class="slide">
-        <img src="img/sealsnow.jpg" alt="Snuw" class="slide">
-        <img src="img/nom.jpg" alt="Omnomnom!" class="slide">
-        <button onclick="slideshow()">Kellmepless</button>
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/Awkward-Seal.jpg" alt="Seal-of-Fortune" title="Buy Me!" style="width:100%">
+            <div class="text">Caption One</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/sealsnow.jpg" alt="Snuw" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/nom.jpg" alt="Omnomnom!" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
     </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
     <a href="#"><button>Sälj din Säl!</button></a>
     <a href="#"><button>Information</button></a>
     <a href="#"><button>Glada Säljare</button></a>
