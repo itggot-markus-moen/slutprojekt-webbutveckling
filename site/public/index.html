@@ -13,37 +13,38 @@
         <h1>Sälj din Säl!</h1>
     </header>
     <main>
-    <div class="slideshow">
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/Awkward-Seal.jpg" alt="Seal-of-Fortune" title="Buy Me!" style="width:100%">
-            <div class="text">Caption One</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/sealsnow.jpg" alt="Snuw" style="width:100%">
-            <div class="text">Caption Two</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img/nom.jpg" alt="Omnomnom!" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-        <a class="next" onclick="plusSlides(1)">&#10095</a>
-    </div>
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+
+    <img name="slide" width="360">
 
     <a href="#"><button>Sälj din Säl!</button></a>
     <a href="#"><button>Information</button></a>
     <a href="#"><button>Glada Säljare</button></a>
 </main>
-<script> src="js/slideshow.js"</script>
+
+<script>
+    var i = 0;
+    var images = [];
+    var time = 3000;
+
+    images[0] = 'img/Awkward-Seal.jpg';
+    images[1] = 'img/sealsnow.jpg';
+    images[2] = 'img/nom.jpg';
+
+    function changeImg(){
+        document.slide.src = images[i];
+
+        if(i < images.length-1){
+            i++;
+        } else {
+            i = 0;
+        }
+
+        setTimeout("changeImg()", time);
+    }
+
+    window.onload = changeImg;
+
+</script>
     </div>
 </body>
 </html>
