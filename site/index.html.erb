@@ -1,7 +1,9 @@
 <main>
-
-    <img name="slide" width="360">
-
+    <div class="slideshow">
+        <h2 class="arrowleft"><button  onclick="changeImg(-1)">&#10094;</button></h2>
+        <h2 class="arrowright"><button  onclick="changeImg(1)">&#10095;</button></h2>
+        <img name="slide" width="360">
+    </div>
     <a href="#"><button>Sälj din Säl!</button></a>
     <a href="#"><button>Information</button></a>
     <a href="#"><button>Glada Säljare</button></a>
@@ -10,22 +12,28 @@
 <script>
     var i = 0;
     var images = [];
-    var time = 3000;
 
     images[0] = 'img/Awkward-Seal.jpg';
     images[1] = 'img/sealsnow.jpg';
     images[2] = 'img/nom.jpg';
 
-    function changeImg(){
+    function changeImg(n){
+        if(i > images.length-1){
+            i = 0;
+        } else if(i < 0) {
+            i = images.length-1;
+        }
+
         document.slide.src = images[i];
 
-        if(i < images.length-1){
-            i++;
+        if(((i + n) < images.length) || ((i + n) >= 0)){
+            i += n;
+        } else if((i + n) < 0) {
+            i = images.length-1;
         } else {
             i = 0;
         }
-
-        setTimeout("changeImg()", time);
+        console.log(i)
     }
 
     window.onload = changeImg;

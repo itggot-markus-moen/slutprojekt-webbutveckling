@@ -1,3 +1,41 @@
-img {
+.slideshow {
     grid-row: span 3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    img {
+        grid-column: span 5;
+        grid-row: span 3;
+    }
+
+    button {
+        color: black;
+        background-color: transparent;
+        border-color: transparent;
+
+        &:active {
+            color: black;
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+}
+
+.arrowleft {
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.arrowright {
+    position: absolute;
+    grid-column: 5/6;
+    grid-row: 2/3;
+    align-self: center;
+    justify-content: center;
+    margin-left: 325px;
 }
