@@ -1,18 +1,19 @@
 button {
-    color: white;
+    color: #0D44FF;
     align-self: center;
     text-align: center;
-    background-color: black;
+    background-color: white;
     border-radius: 9001px;
     font-size: 25px;
+    font-family: 'roboto';
     border-style: solid;
-    border-color: white;
+    border-color: #0D44FF;
     grid-column: span 1;
 
     &:active {
-        color: black;
-        background-color: white;
-        border-color: black;
+        color: white;
+        background-color: #0D44FF;
+        border-color: white;
     }
 }
 
@@ -29,5 +30,17 @@ main {
     }
     a:nth-of-type(3) {
         grid-row: 6/7;
+    }
+}
+
+button.icon {
+    color: black;
+    background-color: transparent;
+    border-color: transparent;
+
+    &:active {
+        color: black;
+        background-color: transparent;
+        border-color: transparent;
     }
 }

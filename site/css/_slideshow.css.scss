@@ -8,18 +8,6 @@
         grid-column: span 5;
         grid-row: span 3;
     }
-
-    button {
-        color: black;
-        background-color: transparent;
-        border-color: transparent;
-
-        &:active {
-            color: black;
-            background-color: transparent;
-            border-color: transparent;
-        }
-    }
 }
 
 .arrowleft {

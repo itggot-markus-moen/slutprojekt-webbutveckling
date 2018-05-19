@@ -2,15 +2,21 @@ header {
     grid-column: span 1;
     grid-row: span 1;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1;
-    background-color: hotpink;
+    background-color: #0D44FF;
 
     h1 {
-        grid-column: 2/3;
+        grid-column: 2/5;
         grid-row: span 1;
         font-family: 'Roboto Slab', serif;
         font-size: 20px;
         text-align: center;
+        margin-top: 20px;
+        color: white;
+    }
+
+    a {
+        margin-top: 20px;
     }
 }

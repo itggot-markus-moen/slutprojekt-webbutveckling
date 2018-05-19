@@ -4,4 +4,15 @@ main {
     display: grid;
     grid-template-columns: inherit;
     grid-template-rows: repeat(6, 1fr);
+    background-color: #00C0FF;
+}
+
+main.sell {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+main.sellers {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
