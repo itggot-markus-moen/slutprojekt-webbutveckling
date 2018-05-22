@@ -2,8 +2,8 @@ body {
   margin: 0; }
 
 .grid {
-  width: 360px;
-  height: 598px;
+  width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: repeat(7, 1fr); }
@@ -41,7 +41,9 @@ header {
   grid-template-rows: repeat(3, 1fr); }
   .slideshow img {
     grid-column: span 5;
-    grid-row: span 3; }
+    grid-row: span 3;
+    width: 100vw;
+    height: 43vh; }
 
 .arrowleft {
   position: absolute;
@@ -49,7 +51,7 @@ header {
   grid-row: 2/3;
   align-self: center;
   justify-content: center;
-  margin-left: 0px;
+  margin-left: 0vw;
   border-color: transparent; }
   .arrowleft:active {
     border-color: transparent; }
@@ -60,7 +62,7 @@ header {
   grid-row: 2/3;
   align-self: center;
   justify-content: center;
-  margin-left: 320px;
+  margin-left: 89vw;
   border-color: transparent; }
   .arrowright:active {
     border-color: transparent; }
@@ -162,4 +164,4 @@ main p {
 main.sellers img {
   grid-column: span 1;
   grid-row: span 1;
-  width: 180px; }
+  width: 50vw; }
