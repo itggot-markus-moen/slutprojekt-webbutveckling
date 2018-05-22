@@ -34,13 +34,23 @@ main {
 }
 
 button.icon {
-    color: black;
     background-color: transparent;
     border-color: transparent;
 
     &:active {
-        color: black;
         background-color: transparent;
         border-color: transparent;
+    }
+}
+
+.slideshow {
+    .arrowleft {
+        width: 36px; height: 36px;
+        background: url('../img/css_sprites.png') -66px -10px;
+    }
+
+    .arrowright {
+        width: 36px; height: 36px;
+        background: url('../img/css_sprites.png') -66px -66px;
     }
 }

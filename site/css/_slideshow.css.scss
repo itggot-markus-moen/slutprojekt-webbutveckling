@@ -16,7 +16,12 @@
     grid-row: 2/3;
     align-self: center;
     justify-content: center;
-    margin-left: 5px;
+    margin-left: 0px;
+    border-color: transparent;
+
+    &:active {
+    border-color: transparent;
+    }
 }
 
 .arrowright {
@@ -25,5 +30,10 @@
     grid-row: 2/3;
     align-self: center;
     justify-content: center;
-    margin-left: 325px;
+    margin-left: 320px;
+    border-color: transparent;
+
+    &:active {
+    border-color: transparent;
+    }
 }

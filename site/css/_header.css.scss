@@ -18,5 +18,13 @@ header {
 
     a {
         margin-top: 20px;
+        margin-left: 15px;
+        width: 36px; height: 36px;
+        background: url('../img/css_sprites.png') -10px -10px;
+    }
+
+    a:nth-of-type(2) {
+        width: 36px; height: 36px;
+        background: url('../img/css_sprites.png') -10px -66px;
     }
 }

@@ -24,7 +24,15 @@ header {
     margin-top: 20px;
     color: white; }
   header a {
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 36px;
+    height: 36px;
+    background: url("../img/css_sprites.png") -10px -10px; }
+  header a:nth-of-type(2) {
+    width: 36px;
+    height: 36px;
+    background: url("../img/css_sprites.png") -10px -66px; }
 
 .slideshow {
   grid-row: span 3;
@@ -41,7 +49,10 @@ header {
   grid-row: 2/3;
   align-self: center;
   justify-content: center;
-  margin-left: 5px; }
+  margin-left: 0px;
+  border-color: transparent; }
+  .arrowleft:active {
+    border-color: transparent; }
 
 .arrowright {
   position: absolute;
@@ -49,7 +60,10 @@ header {
   grid-row: 2/3;
   align-self: center;
   justify-content: center;
-  margin-left: 325px; }
+  margin-left: 320px;
+  border-color: transparent; }
+  .arrowright:active {
+    border-color: transparent; }
 
 button {
   color: #0D44FF;
@@ -78,13 +92,20 @@ main a:nth-of-type(3) {
   grid-row: 6/7; }
 
 button.icon {
-  color: black;
   background-color: transparent;
   border-color: transparent; }
   button.icon:active {
-    color: black;
     background-color: transparent;
     border-color: transparent; }
+
+.slideshow .arrowleft {
+  width: 36px;
+  height: 36px;
+  background: url("../img/css_sprites.png") -66px -10px; }
+.slideshow .arrowright {
+  width: 36px;
+  height: 36px;
+  background: url("../img/css_sprites.png") -66px -66px; }
 
 main {
   grid-column: span 1;
