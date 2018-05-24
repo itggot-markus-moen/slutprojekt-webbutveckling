@@ -35,6 +35,7 @@ header {
     background: url("../img/css_sprites.png") -10px -66px; }
 
 .slideshow {
+  grid-column: span 1;
   grid-row: span 3;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -43,7 +44,8 @@ header {
     grid-column: span 5;
     grid-row: span 3;
     width: 100vw;
-    height: 43vh; }
+    height: 43vh;
+    object-fit: cover; }
 
 .arrowleft {
   position: absolute;
@@ -62,11 +64,20 @@ header {
   grid-row: 2/3;
   align-self: center;
   justify-content: center;
-  margin-left: 89vw;
+  margin-left: 90vw;
   border-color: transparent; }
   .arrowright:active {
     border-color: transparent; }
 
+@media only screen and (min-device-width: 400px) {
+  .slideshow {
+    grid-column: span 3;
+    grid-row: span 5; }
+    .slideshow img {
+      height: 72vh; }
+
+  .arrowright {
+    margin-left: 95vw; } }
 button {
   color: #0D44FF;
   align-self: center;
@@ -109,9 +120,20 @@ button.icon {
   height: 36px;
   background: url("../img/css_sprites.png") -66px -66px; }
 
+@media only screen and (min-device-width: 400px) {
+  main a:nth-of-type(1) {
+    grid-column: span 1;
+    grid-row: 1; }
+  main a:nth-of-type(2) {
+    grid-column: span 1;
+    grid-row: 1; }
+  main a:nth-of-type(3) {
+    grid-column: span 1;
+    grid-row: 1; } }
 main {
   grid-column: span 1;
   grid-row: span 6;
+  width: 100vw;
   display: grid;
   grid-template-columns: inherit;
   grid-template-rows: repeat(6, 1fr);
@@ -121,10 +143,16 @@ main.sell {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
+main.faq {
+  grid-template-columns: repeat(1, 1fr); }
+
 main.sellers {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
+@media only screen and (min-device-width: 400px) {
+  main {
+    grid-template-columns: repeat(3, 1fr); } }
 main.sell input {
   grid-column: 2/7; }
 main.sell input:nth-of-type(1) {
@@ -153,7 +181,10 @@ main.sell p {
   font-size: 25px; }
 main.sell img {
   grid-column: 2/7;
-  grid-row: 7/12; }
+  grid-row: 7/12;
+  width: 71.5vw;
+  height: 35vh;
+  object-fit: cover; }
 
 main h3 {
   margin-left: 10px;
@@ -164,4 +195,6 @@ main p {
 main.sellers img {
   grid-column: span 1;
   grid-row: span 1;
-  width: 50vw; }
+  width: 50vw;
+  height: 43vh;
+  object-fit: cover; }

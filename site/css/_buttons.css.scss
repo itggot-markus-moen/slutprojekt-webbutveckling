@@ -54,3 +54,20 @@ button.icon {
         background: url('../img/css_sprites.png') -66px -66px;
     }
 }
+
+@media only screen and (min-device-width: 400px) {
+    main {
+        a:nth-of-type(1) {
+            grid-column: span 1;
+            grid-row: 1;
+        }
+        a:nth-of-type(2) {
+            grid-column: span 1;
+            grid-row: 1;
+        }
+        a:nth-of-type(3) {
+            grid-column: span 1;
+            grid-row: 1;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 main {
     grid-column: span 1;
     grid-row: span 6;
+    width: 100vw;
     display: grid;
     grid-template-columns: inherit;
     grid-template-rows: repeat(6, 1fr);
@@ -12,7 +13,17 @@ main.sell {
     grid-template-rows: repeat(12, 1fr);
 }
 
+main.faq {
+    grid-template-columns: repeat(1, 1fr);
+}
+
 main.sellers {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+}
+
+@media only screen and (min-device-width: 400px) {
+    main {
+        grid-template-columns: repeat(3, 1fr)
+    }
 }

@@ -3,5 +3,7 @@ main.sellers {
         grid-column: span 1;
         grid-row: span 1; 
         width: 50vw;
+        height: 43vh;
+        object-fit: cover;
     }
 }

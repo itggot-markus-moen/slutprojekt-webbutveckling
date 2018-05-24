@@ -1,4 +1,5 @@
 .slideshow {
+    grid-column: span 1;
     grid-row: span 3;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -9,6 +10,7 @@
         grid-row: span 3;
         width: 100vw;
         height: 43vh;
+        object-fit: cover;
     }
 }
 
@@ -32,10 +34,24 @@
     grid-row: 2/3;
     align-self: center;
     justify-content: center;
-    margin-left: 89vw;
+    margin-left: 90vw;
     border-color: transparent;
 
     &:active {
     border-color: transparent;
+    }
+}
+
+@media only screen and (min-device-width: 400px) {
+    .slideshow {
+        grid-column: span 3;
+        grid-row: span 5;
+
+        img {
+            height: 72vh;
+        }
+    }
+    .arrowright {
+        margin-left: 95vw;
     }
 }
