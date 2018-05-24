@@ -198,3 +198,28 @@ main.sellers img {
   width: 50vw;
   height: 43vh;
   object-fit: cover; }
+main.sellers .details {
+  width: 74vw;
+  height: 0vh;
+  margin-left: 13vw;
+  margin-top: 13vh;
+  position: absolute;
+  background-image: url(../img/free_sealler.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 1s;
+  visibility: hidden; }
+main.sellers .darken {
+  position: absolute;
+  width: 100vw;
+  height: 0vh;
+  background-color: black;
+  opacity: 0.5;
+  transition: 0.5s;
+  visibility: hidden; }
+main.sellers .show {
+  height: 60vh;
+  visibility: visible; }
+main.sellers .fade {
+  height: 100vh;
+  visibility: visible; }

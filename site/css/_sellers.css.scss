@@ -1,9 +1,43 @@
 main.sellers {
+    
     img {
         grid-column: span 1;
         grid-row: span 1; 
         width: 50vw;
         height: 43vh;
         object-fit: cover;
+    }
+
+    .details {
+        width: 74vw;
+        height: 0vh;
+        margin-left: 13vw;
+        margin-top: 13vh;
+        position: absolute;
+        background-image: url(../img/free_sealler.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 1s;
+        visibility: hidden;
+    }
+
+    .darken {
+        position: absolute;
+        width: 100vw;
+        height: 0vh;
+        background-color: black;
+        opacity: 0.5;
+        transition: 0.5s;
+        visibility: hidden;
+    }
+
+    .show {
+        height: 60vh;
+        visibility: visible;
+    }
+
+    .fade {
+        height: 100vh;
+        visibility: visible;
     }
 }
