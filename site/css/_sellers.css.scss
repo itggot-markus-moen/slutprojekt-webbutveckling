@@ -41,3 +41,39 @@ main.sellers {
         visibility: visible;
     }
 }
+
+@media only screen and (min-device-width: 800px) {
+    main.sellers {
+
+        img {
+            width: 35vw;
+        }
+
+        .details {
+            width: 51.8vw;
+            margin-left: 9.1vw;
+        }
+
+        .darken {
+            width: 70vw;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1000px) {
+    main.sellers {
+
+        img {
+            width: 25vw;
+        }
+
+        .details {
+            width: 37vw;
+            margin-left: 6.5vw;
+        }
+
+        .darken {
+            width: 50vw;
+        }
+    }
+}

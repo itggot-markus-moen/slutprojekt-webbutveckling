@@ -7,7 +7,31 @@ body {
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: repeat(7, 1fr); }
+  .grid .ad1 {
+    display: none;
+    grid-column: span 1;
+    grid-row: span 6;
+    background-color: hotpink; }
+  .grid .ad2 {
+    display: none;
+    grid-column: span 1;
+    grid-row: span 6;
+    background-color: hotpink; }
 
+@media only screen and (min-device-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); }
+    .grid .ad1 {
+      display: block;
+      width: 30vw; } }
+@media only screen and (min-device-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); }
+    .grid .ad1 {
+      width: 25vw; }
+    .grid .ad2 {
+      display: block;
+      width: 25vw; } }
 header {
   grid-column: span 1;
   grid-row: span 1;
@@ -34,6 +58,14 @@ header {
     height: 36px;
     background: url("../img/css_sprites.png") -10px -66px; }
 
+@media only screen and (min-device-width: 800px) {
+  header {
+    grid-column: span 2; }
+    header h1 {
+      font-size: 40px; } }
+@media only screen and (min-device-width: 1000px) {
+  header {
+    grid-column: span 3; } }
 .slideshow {
   grid-column: span 1;
   grid-row: span 3;
@@ -153,6 +185,22 @@ main.sellers {
 @media only screen and (min-device-width: 400px) {
   main {
     grid-template-columns: repeat(3, 1fr); } }
+@media only screen and (min-device-width: 800px) {
+  main {
+    width: 70vw; }
+
+  .slideshow img {
+    width: 70vw; }
+  .slideshow .arrowright {
+    margin-left: 65vw; } }
+@media only screen and (min-device-width: 1000px) {
+  main {
+    width: 50vw; }
+
+  .slideshow img {
+    width: 50vw; }
+  .slideshow .arrowright {
+    margin-left: 47vw; } }
 main.sell input {
   grid-column: 2/7; }
 main.sell input:nth-of-type(1) {
@@ -223,3 +271,20 @@ main.sellers .show {
 main.sellers .fade {
   height: 100vh;
   visibility: visible; }
+
+@media only screen and (min-device-width: 800px) {
+  main.sellers img {
+    width: 35vw; }
+  main.sellers .details {
+    width: 51.8vw;
+    margin-left: 9.1vw; }
+  main.sellers .darken {
+    width: 70vw; } }
+@media only screen and (min-device-width: 1000px) {
+  main.sellers img {
+    width: 25vw; }
+  main.sellers .details {
+    width: 37vw;
+    margin-left: 6.5vw; }
+  main.sellers .darken {
+    width: 50vw; } }

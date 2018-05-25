@@ -24,6 +24,38 @@ main.sellers {
 
 @media only screen and (min-device-width: 400px) {
     main {
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-device-width: 800px) {
+    main {
+        width: 70vw;
+    }
+
+    .slideshow {
+        img {
+            width: 70vw;
+        }
+
+        .arrowright {
+            margin-left: 65vw;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1000px) {
+    main {
+        width: 50vw;
+    }
+
+    .slideshow {
+        img {
+            width: 50vw;
+        }
+
+        .arrowright {
+            margin-left: 47vw;
+        }
     }
 }
